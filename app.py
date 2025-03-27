@@ -15,6 +15,11 @@ st.write("Upload an image to check its freshness.")
 @st.cache_resource
 def load_model():
     model_path = "final_freshness_resnet_model.keras"
+    
+    # Debugging: Print current working directory and list files
+    st.write(f"Current working directory: {os.getcwd()}")
+    st.write(f"Files in directory: {os.listdir('.')}")
+    
     if not os.path.exists(model_path):
         st.error(f"❌ Model file not found: {model_path}")
         return None
