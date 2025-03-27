@@ -1,5 +1,4 @@
-tensorflow
-numpy
-pillow
-streamlit
-huggingface_hub
+streamlit==1.44.0
+tensorflow==2.10.0
+numpy==1.23.5  # Compatible with TensorFlow 2.10 and Python 3.10
+pillow==11.1.0
